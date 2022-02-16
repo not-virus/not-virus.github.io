@@ -1,7 +1,23 @@
 html {
     height: 100%;
-    background-image: linear-gradient(-20deg, #e4e4e4, #f3f3f3);
+    /*background: linear-gradient(-20deg, #e4e4e4, #f3f3f3);*/
+    /*background: linear-gradient(-45deg, #75bae2, #e2db8e);*/
+    background: linear-gradient(-45deg, #75bae2, #d4ce8b, #e2a7b2);
+    background-size: 300% 300%;
+    animation: background-gradient 15s ease infinite;
     /*background-color: #f3f3f3;*/ /*e4e4e4*/
+}
+
+@keyframes background-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body {
@@ -13,7 +29,11 @@ body {
 
 .contact-button {
     /*background-color: #9ec9da;*/
+    transition: all 0.2s;
+    animation: gradient 1.5s ease backwards;
     background-image: linear-gradient(-25deg, #7e69db, #d38ee2);
+    background-size: 150% 100%;
+    background-position: 50% 100%;
     color:#222222;
     border: none;
     border-radius: 0.35em;
@@ -25,8 +45,11 @@ body {
 
 .contact-button:hover {
     transform: scale(1.03);
-    transition: all 0.15s;
-    background-image: linear-gradient(-25deg, #765de7, #e19af1);
+    transition: all 0.1s;
+    background: linear-gradient(-25deg, #765de7, #e19af1);
+    background-size: 150% 100%;
+    background-position: 50% 100%;
+    animation: gradient 0.75s ease forwards;
     color:#222222;
     border: none;
     border-radius: 0.35em;
@@ -44,7 +67,11 @@ body {
 }
 
 .link-button {
+    transition: all 0.2s;
+    animation: gradient 1.5s ease backwards;
     background-image: linear-gradient(-25deg, #7e69db, #d38ee2);
+    background-size: 150% 100%;
+    background-position: 50% 100%;
     color:#222222;
     border: none;
     border-radius: 0.35em;
@@ -56,8 +83,11 @@ body {
 
 .link-button:hover {
     transform: scale(1.03);
-    transition: all 0.15s;
-    background-image: linear-gradient(-25deg, #765de7, #e19af1);
+    transition: all 0.1s;
+    background: linear-gradient(-25deg, #765de7, #e19af1);
+    background-size: 150% 100%;
+    background-position: 50% 100%;
+    animation: gradient 0.75s ease forwards;
     color:#222222;
     border: none;
     border-radius: 0.35em;
@@ -72,6 +102,15 @@ body {
     border: none;
     border-radius: 0.35em;
     box-shadow: 0 0 3px #777777, 0 1px 2px #777777;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .contact-button-image {
@@ -108,6 +147,7 @@ body {
 }
 
 .main {
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -115,11 +155,11 @@ body {
     float: left;
     background-color: #e4e4e4; /*f3f3f3*/
     /*background-image: linear-gradient(-20deg, #919191, #e7e7e7);*/
-    background-image: linear-gradient(-40deg, #bbd8d6, #d2dbdf);
+    /*background-image: linear-gradient(-40deg, #8475ca, #d8a0e5);*/
     border: none;
     border-radius: 1em;
     padding: 1em;
-    box-shadow: 0 0 10px #a8a8a8, 0 4px 6px #a8a8a8; /*c0c0c0c*/
+    box-shadow: 0 0 5px #929292, 0 2px 3px #929292; /*c0c0c0c*/
 }
 
 #topbar {
@@ -128,7 +168,7 @@ body {
 }
 
 #sidebar {
-    width: 15em;
+    width: 13em;
     margin: 0 2em 0 0;
 }
 
@@ -138,12 +178,19 @@ body {
     font-weight: bold;
 }
 
+#info {
+    text-align: center;
+    margin: 0 auto;
+}
+
 #info-contacts {
-    margin: 1em 0 0
+    margin: 1em auto 0;
 }
 
 #content {
-    width: calc(100% - 40em);
+    float: left;
+    width: calc(100% - 21em);
+    max-width: 70em;
 }
 
 #pfp {
@@ -155,4 +202,72 @@ body {
 
 #info-pfp {
     margin: 1em auto 1.5em;
+}
+
+.bio-header {
+    font-size: 16pt;
+    font-weight: 900;
+    margin: 1em 0;
+}
+
+.projects-list {
+    margin: 2em auto 0;
+}
+
+.project-section {
+    display: block;
+    transition: all 0.2s;
+    animation: gradient 1.5s ease backwards;
+    background-image: linear-gradient(-25deg, #7e69db, #d38ee2);
+    color:#222222;
+    border: none;
+    border-radius: 0.35em;
+    box-shadow: 0 0 5px #777777, 0 2px 3px #777777;
+    width: calc(100% - 1em);
+    margin: 1em auto 0;
+    padding: 1em 0 1em 1em;
+}
+
+.project-section:hover {
+    transform: scale(1.01);
+    transition: all 0.1s;
+    background: linear-gradient(-25deg, #765de7, #e19af1);
+    background-size: 150% 100%;
+    background-position: 50% 100%;
+    animation: gradient 0.75s ease forwards;
+    color:#222222;
+    border: none;
+    border-radius: 0.35em;
+    box-shadow: 0 0 7px #777777, 0 4px 4px #777777;
+}
+
+.project-section:active {
+    transform: scale(0.97);
+    transition: all 0.5s;
+    background-image: linear-gradient(-25deg, #644ec5, #c270d4);
+    color:#222222;
+    border: none;
+    border-radius: 0.35em;
+    box-shadow: 0 0 3px #777777, 0 1px 2px #777777;
+}
+
+.section-name {
+    font-weight: 900;
+    font-size: 14pt;
+    margin: 0 0 0.5em;
+    pointer-events: none;
+}
+
+.section-description {
+    pointer-events: none;
+}
+
+.section-langs-used {
+    margin: 0.5em 0 0;
+    pointer-events: none;
+}
+
+.section-tech-used {
+    margin: 0.1em 0 0;
+    pointer-events: none;
 }

@@ -8,14 +8,14 @@
 </head>
 <body onload="init()">
     <div id="topbar">
-        Work in progress!
+        I'm a work in progress!!<br>(so is this website)
     </div>
     <div class="container">
         <div class="main">
             <div class="main-child" id="sidebar">
                 <div id="info">
                     <div id="info-pfp">
-                        <img id="pfp" src="resources/test-image_500x500_black.png" alt="A picture of a trans badass"></img>
+                        <img id="pfp" src="resources/xer.png" alt="My cat, Xer" title="My cat, Xer"></img>
                     </div>
                     <div id="info-name">
                         Cam Krueger
@@ -24,9 +24,6 @@
                         Application Developer
                     </div>
                     <div id="info-contacts">
-                        <div id="contact-location">
-                            Saint Louis, MO
-                        </div>
                         <div class="contact-button-container">
                             <button id="contact-phone-button" class="contact-button" title="Click to show phone number">
                                 <img src="resources/phone_thin.png" class="contact-button-image" alt="img"></img>
@@ -46,13 +43,15 @@
                             </div>
                         </div>
                         <div class="contact-button-container">
-                            <button id="contact-linkedin-button" class="link-button" title="Click to go to my LinkedIn" onclick="location.href='https://linkedin.com/in/camkrueger1999'">
+                            <button id="contact-linkedin-button" class="link-button" title="Click to go to my LinkedIn"
+                                    onclick="window.open('https://linkedin.com/in/camkrueger1999', '_blank')">
                                 <img src="resources/linkedin.png" class="link-button-image" alt="img"></img>
                                 Linkedin
                             </button>
                         </div>
                         <div class="contact-button-container">
-                            <button  id="contact-github-button" class="link-button" title="Click to go to my GitHub" onclick="location.href='https://github.com/not-virus/'">
+                            <button  id="contact-github-button" class="link-button" title="Click to go to my GitHub"
+                                    onclick="window.open('https://github.com/not-virus/', '_blank')">
                                 <img src="resources/github.png" class="link-button-image" alt="img"></img>
                                 GitHub
                             </button>
@@ -63,10 +62,10 @@
                 </div>
             </div>
             <div class="main-child" id="content">
-                <h3>
-                    You've reached Cam Krueger's landing page!
-                </h3>
-                <div>
+                <div class="bio-header">
+                    You've reached Cam's landing page!
+                </div>
+                <div class="bio">
                     Ideally, this would be the place for them to showcase their many projects and accomplishments.<br>
                     As you can see, however, there's absolutely nothing here.  Cam is currently working on<br>
                     a few really cool projects, involving everything from rockets to keyboards to scratchbuilt<br>
@@ -75,6 +74,24 @@
                     back later for some cool and interesting projects!<br><br>
                     And hey,<br>
                     Thanks for stopping by 😊
+                </div>
+                <div class="projects-list">
+                    <div class="project-section" id="matrix-keyboard-pi">
+                        <div class="section-name">matrix-keyboard-pi</div>
+                        <div class="section-description">
+                            A tool that can be run on the Raspberry Pi Zero to revive a vintage matrix keyboard.
+                        </div>
+                        <div class="section-langs-used">Languages: C/C++, bash</div>
+                        <div class="section-tech-used">Technologies: Raspberry Pi, Linux Gadgets API</div>
+                    </div>
+                    <div class="project-section" id="ex-proj">
+                        <div class="section-name">Project name</div>
+                        <div class="section-description">
+                            A really interesting project description that everyone's gonna wanna read
+                        </div>
+                        <div class="section-langs-used">Languages: every damn one of them</div>
+                        <div class="section-tech-used">Technologies: this and that and the other thing</div>
+                    </div>
                 </div>
             </div>
         </div>
