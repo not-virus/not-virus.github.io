@@ -1,19 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Landing page</title>
 </head>
-<body style="font-family:'Century Gothic', 'Franklin Gothic Medium', Arial, sans-serif">
-    <h3>
-        You've reached Cam Krueger's landing page!
-    </h3>
-    <div>
-        Ideally, this would be the place for them to showcase their many projects and accomplishments.<br>
-        As you can see, however, there's absolutely nothing here.  Cam is currently working on<br>
-        a few really cool projects, involving everything from rockets to keyboards to scratchbuilt<br>
-        homebrew computers.  These projects are still in the works, though, and aren't quite ready<br>
-        for the public eye (or at least that's what Cam likes to tell themself).  Be sure to check<br>
-        back later for some cool and interesting projects!<br><br>
-        And hey,<br>
-        Thanks for stopping by 😊
+<body onload="init()">
+    <div id="topbar">
+        Work in progress!
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="main-child" id="sidebar">
+                <div id="info">
+                    <div id="info-pfp">
+                        <img id="pfp" src="resources/test-image_500x500_black.png" alt="A picture of a trans badass"></img>
+                    </div>
+                    <div id="info-name">
+                        Cam Krueger
+                    </div>
+                    <div id="info-title">
+                        Application Developer
+                    </div>
+                    <div id="info-contacts">
+                        <div id="contact-location">
+                            Saint Louis, MO
+                        </div>
+                        <div class="contact-button-container">
+                            <button id="contact-phone-button" class="contact-button" title="Click to show phone number">
+                                <img src="resources/phone_thin.png" class="contact-button-image" alt="img"></img>
+                                Phone
+                            </button>
+                            <div id="contact-phone" class="contact-hidden-info">
+                                636-395-6766
+                            </div>
+                        </div>
+                        <div class="contact-button-container">
+                            <button id="contact-email-button" class="contact-button" title="Click to show email">
+                                <img src="resources/email.png" class="contact-button-image" alt="img"></img>
+                                Email
+                            </button>
+                            <div id="contact-email" class="contact-hidden-info">
+                                camkrueger1999@gmail.com
+                            </div>
+                        </div>
+                        <div class="contact-button-container">
+                            <button id="contact-linkedin-button" class="link-button" title="Click to go to my LinkedIn" onclick="location.href='https://linkedin.com/in/camkrueger1999'">
+                                <img src="resources/linkedin.png" class="link-button-image" alt="img"></img>
+                                Linkedin
+                            </button>
+                        </div>
+                        <div class="contact-button-container">
+                            <button  id="contact-github-button" class="link-button" title="Click to go to my GitHub" onclick="location.href='https://github.com/not-virus/'">
+                                <img src="resources/github.png" class="link-button-image" alt="img"></img>
+                                GitHub
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="navbar">
+                </div>
+            </div>
+            <div class="main-child" id="content">
+                <h3>
+                    You've reached Cam Krueger's landing page!
+                </h3>
+                <div>
+                    Ideally, this would be the place for them to showcase their many projects and accomplishments.<br>
+                    As you can see, however, there's absolutely nothing here.  Cam is currently working on<br>
+                    a few really cool projects, involving everything from rockets to keyboards to scratchbuilt<br>
+                    homebrew computers.  These projects are still in the works, though, and aren't quite ready<br>
+                    for the public eye (or at least that's what Cam likes to tell themself).  Be sure to check<br>
+                    back later for some cool and interesting projects!<br><br>
+                    And hey,<br>
+                    Thanks for stopping by 😊
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+</html>
