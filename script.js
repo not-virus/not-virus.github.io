@@ -4,7 +4,7 @@ function init() {
     var buttons = document.querySelectorAll("button.contact-button");
     buttons.forEach(element => element.addEventListener("click", showContent));
 
-    var projects = document.querySelectorAll("div.content-section")
+    var projects = document.querySelectorAll("div.project-section")
     projects.forEach(element => element.addEventListener("click", goToProject))
 }
 
